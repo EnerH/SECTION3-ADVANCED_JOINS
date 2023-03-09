@@ -1,0 +1,13 @@
+CREATE TABLE T1 (label CHAR(1) PRIMARY KEY);
+
+INSERT INTO T1 (label)
+VALUES ('A'), ('B'), ('C'), ('D');
+
+CREATE TABLE T2 (score INT PRIMARY KEY);
+
+INSERT INTO T2 (score)
+VALUES (1), (2), (3), (4);
+
+SELECT *
+FROM T1
+CROSS JOIN T2;
